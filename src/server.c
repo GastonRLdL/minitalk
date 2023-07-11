@@ -6,7 +6,7 @@
 /*   By: groman-l <groman-l@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 16:02:44 by groman-l          #+#    #+#             */
-/*   Updated: 2023/07/11 16:04:10 by groman-l         ###   ########.fr       */
+/*   Updated: 2023/07/11 16:52:56 by groman-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ void	handler(int sig)
 			ft_printf("\n");
 		ch = '\0';
 	}
-	return (NULL);
 }
 
 void	confirm(void)
@@ -53,7 +52,7 @@ int	main(void)
 	else
 		ft_printf("PID: %i\n", pid);
 	confirm();
-	while (42)
-		;
+	while (TRUE)
+		sleep(1);
 	return (SUCCESS);
 }
